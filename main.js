@@ -4,15 +4,9 @@ const cep = document.getElementById("cep")
 const pesquisar = document.getElementById("pesquisar")
 const limpar = document.getElementById("limpar")
 
-// Validar o CEP
-
-
 
 const validarCep = (cep) => {
-    //returna verdadeiro ou falso - true or false
-    //Expressão regular verifica se os caracteres são numéricos e tem 8 de comprimento
     return cep.length == 8 && /^[0-9]+$/.test(cep)
-    //NÃO ESQUECER DO RETURN EM CASO DE FUNÇÃO COM MAIS DE UMA LINHA!!!
 }
 
 const preencherDados = async (endereco) => {
